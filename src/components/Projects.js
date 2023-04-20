@@ -12,10 +12,12 @@ function Projects() {
   const projectsElements = projectsData.map(project => {
     const backgroundStyle = {
       transition: "0.3s",
-      backgroundColor: onHover?"rgba(0, 0, 0, 0":"rgba(0, 0, 0, .9",
-      border:onHover?"none":"2px solid white",
+      backgroundColor: onHover?"rgba(255, 255, 255, 0":"rgba(255, 255, 255, .8",
+      border:onHover?"2px solid grey":"2px solid black",
       height:"100%",
-      borderRadius:"20px"
+      borderRadius:"20px",
+      display: "flex",
+      alignItems: "center"
     }
 
     const contentStyle = {

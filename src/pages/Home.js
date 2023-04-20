@@ -4,9 +4,6 @@ import Projects from '../components/Projects'
 
 function Home() {
 
-  
-  
-
   return (
     <div className="Home">
       <div className="hero-section">
