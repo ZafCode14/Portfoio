@@ -1,6 +1,6 @@
 body{
   margin: 0;
-  background-color: #cdcdcd;
+  background-color: #ababab;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   color: #222222;
 }
@@ -63,7 +63,7 @@ body{
   justify-content: center;
 }
 .Header-nav ul {
-  display: flex;
+  display: none;
   list-style: none;
   justify-content: space-around;
   margin: 0;
@@ -89,7 +89,7 @@ body{
             HERO
 *************************************/
 .hero-section {
-  height: 500px;
+  height: 60vh;
   background-image: url(../public/images/Backgrounds/4.png);
   background-position: center;
   background-size: cover;
@@ -106,12 +106,12 @@ body{
 }
 
 .hero-text h1 {
-  font-size: 32px;
+  font-size: 12vw;
   margin-bottom: 16px;
 }
 
 .hero-text h2 {
-  font-size: 16px;
+  font-size: 6vw;
   margin-bottom: 40px;
 }
 
@@ -124,11 +124,11 @@ body{
   color: #d7d7d7;
   padding: 12px 24px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 6vw;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
-  margin: 20px;
-  width: 160px;
+  margin: 10px;
+  width: 64vw;
 }
 
 .cta-button:hover {
@@ -144,7 +144,7 @@ body{
 }
 
 .skills-section h2 {
-  font-size: 36px;
+  font-size: 12vw;
   margin-bottom: 40px;
 }
 
@@ -155,14 +155,14 @@ body{
   flex-wrap: wrap;
 }
 .skills-logo{
-  height: 100px;
+  width: 32vw;
 }
 .skill {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  margin: 2vw;
   padding: 10px;
   background-color: #f7f7f7;
   color: #252525;
@@ -177,7 +177,7 @@ body{
 }
 
 .skill h3 {
-  font-size: 16px;
+  font-size: 5vw;
 }
 /************************************
             PROJECTS
@@ -188,7 +188,7 @@ body{
 }
 
 .projects-section h2 {
-  font-size: 36px;
+  font-size: 12vw;
   margin-bottom: 40px;
 }
 
@@ -199,21 +199,19 @@ body{
 }
 .project {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin: 10px;
-  width: 320px;
-  height: 200px;
-  border-radius: 20px;
+  width: 90vw;
+  height: 60vw;
+  border-radius: 5vw;
   background-position: center;
   background-size: cover;
   cursor: pointer;
   text-decoration: none;
 }
 .project h4{
-  font-size: 44px;
+  font-size: 16vw;
   color: #232323;
-  margin: 0;
 }
 
 /************************************
@@ -235,9 +233,8 @@ body{
 }
 
 .service {
-  height: 230px;
   margin: 10px;
-  padding: 20px;
+  padding: 10px;
   background-color: #fff;
   color: #252525;
   border-radius: 5px;
@@ -251,13 +248,13 @@ body{
 }
 
 .service h2 {
-  font-size: 20px;
+  font-size: 6vw;
   margin-bottom: 20px;
 }
 
 .service p {
   text-align: left;
-  font-size: 16px;
+  font-size: 3vw;
   line-height: 1.5;
 }
 /************************************
@@ -279,12 +276,12 @@ body{
 }
 
 .pricing h2 {
-  font-size: 36px;
+  font-size: 6vw;
   margin-bottom: 20px;
 }
 
 .pricing p {
-  font-size: 16px;
+  font-size: 3vw;
   margin-bottom: 10px;
 }
 /************************************
@@ -308,12 +305,12 @@ body{
 }
 
 .bio-text h2 {
-  font-size: 36px;
+  font-size: 12vw;
   margin-bottom: 20px;
 }
 
 .bio-text p {
-  font-size: 16px;
+  font-size: 3vw;
   line-height: 1.5;
   margin-bottom: 20px;
 }
@@ -337,12 +334,12 @@ body{
 
 }
 .edu-exp-container div h2 {
-  font-size: 20px;
+  font-size: 8vw;
   margin-bottom: 12px;
 }
 
 .edu-exp-container div p {
-  font-size: 16px;
+  font-size: 3vw;
   margin-bottom: 10px;
 }
 /************************************
@@ -351,7 +348,7 @@ body{
 footer {
   background-color: #252525;
   color: #fff;
-  font-size: 8px;
+  font-size: 2vw;
   line-height: 16px;
   display: flex;
   justify-content: center;
@@ -367,7 +364,7 @@ footer {
   flex-wrap: wrap;
 }
 .social-media-logo{
-  height: 24px;
+  height: 6vw;
   margin-right: 10px;
 }
 .social-media li {
@@ -379,6 +376,7 @@ footer {
   width: 40%;
 }
 .col-2{
+  width: 15%;
   margin: 0 10px;
 }
 .col-3{
@@ -409,83 +407,122 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-@media (max-width: 419px){
-  .Header-nav ul{
-    display: none;
-  }
-  
-}
+
 @media (min-width: 420px){
-  .hero-text h2 {
-    font-size: 20px;
-  }
+  
   .menue-bars{
     display: none;
   }
-  .skills-logo{
-    height: 130px;
+  .Header-nav ul{
+    display: flex;
   }
-  .cta-button {
-    font-size: 20px;
-    width: 200px;
-  }
-}
-@media (min-width: 500px){
-  .skills-logo{
-    height: 150px;
-  }
-  .skill {
-    margin: 20px;
-  }
-  .Header-nav a {
-    font-size: 20px;
-  }
-  footer {
-    font-size: 12px;
-  }
-  .service h2 {
-    font-size: 24px;
-  }
-  .service p {
-    font-size: 20px;
-  }
-}
-@media (min-width: 620px){
-  .skills-logo{
-    height: 100px;
-  }
-  .skill {
-    margin: 10px;
-  }
-  .service {
-    width: 500px;
-
-  }
-}
-@media (min-width: 1000px){
-  .Header-nav a {
-    margin: 0 10px;
+  .hero-section {
+    height: 500px;
   }
   .hero-text h1 {
     font-size: 44px;
   }
   .hero-text h2 {
-    font-size: 28px;
+    font-size: 24px;
   }
-  .service {
-    width: 450px;
+  .cta-button{
+    font-size: 20px;
+    width: 200px;
+  }
+  .skills-section h2{
+    font-size: 38px;
   }
   .skills-logo{
-    height: 120px;
+    width: 140px;
   }
-  .skill {
-    margin: 28px;
+  .skill h3 {
+    font-size: 20px;
+  }
+  .projects-section h2{
+    font-size: 38px;
+  }
+  .project {
+    width: 400px;
+    height: 280px;
+    border-radius: 20px;
+  }
+  .project h4{
+    font-size: 52px;
+  }
+  .service {
+    height: 160px;
+  }
+  .service h2 {
+    font-size: 28px;
+  }
+  
+  .service p {
+    font-size: 12px;
+  }
+  .pricing h2 {
+    font-size: 28px;
+  }
+  
+  .pricing p {
+    font-size: 12px;
+  }
+  .bio-text h2 {
+    font-size: 28px;
+  }
+  .bio-text p {
+    font-size: 12px;
+  }
+  .edu-exp-container div h2 {
+    font-size: 28px;
+  }
+  
+  .edu-exp-container div p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 760px){
+  .Header-nav a {
+    margin: 0 10px;
+  }
+  .service {
+    width: 300px;
+  }
+  .skill{
+    margin: 10px;
+  }
+  .project {
+    width: 300px;
+    height: 220px;
+    border-radius: 20px;
+  }
+  .project h4{
+    font-size: 52px;
   }
   footer {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 12px;
   }
   .social-media-logo{
-    height: 36px;
+    height: 40px;
+  }
+}
+@media (min-width: 990px){
+  .service {
+    width: 440px;
+    padding: 20px;
+  }
+
+  .service p {
+    font-size: 16px;
+  }
+
+  .pricing p {
+    font-size: 16px;
+  }
+
+  .bio-text p {
+    font-size: 16px;
+  }
+  .edu-exp-container div p {
+    font-size: 16px;
   }
 }

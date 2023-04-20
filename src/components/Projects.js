@@ -25,7 +25,7 @@ function Projects() {
       transition: "0.3s"
     }
     return (
-      <a href='#1' style={{backgroundImage:`url(${project.img})`}} className='project'>
+      <a key={project.id} href='#1' style={{backgroundImage:`url(${project.img})`}} className='project'>
         <div onMouseEnter={hover} onMouseLeave={hover}  style={backgroundStyle} key={project.id}>
           <h4 style={contentStyle}>{project.name}</h4>
         </div>
