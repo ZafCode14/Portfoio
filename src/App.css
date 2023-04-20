@@ -1,0 +1,491 @@
+body{
+  margin: 0;
+  background-color: #0a0a0a;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #c6c6c6;
+}
+/************************************
+            HEADER
+*************************************/
+.Header {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.menue-bars{
+  height: 40px;
+  margin-right: 8px;
+}
+.Header-section{
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+.Header-section .aside{
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  justify-content: space-around;
+  right: 0;
+  top: 0;
+  background-color: rgba(179, 179, 179, 0.9);
+  height: 100vh;
+}
+.Header-section .aside div a{
+  text-decoration: none;
+  color: rgb(42, 42, 42);
+  font-weight: bold;
+}
+.Header-section .aside div a:active{
+  color: #007bff;
+}
+.x{
+  height: 20px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+.aside-nav-container{
+  margin-top: 40px;
+}
+.Header-logo img {
+  height: 48px;
+  margin: 0 12px;
+}
+.Header-nav nav {
+  display: flex;
+  justify-content: center;
+}
+.Header-nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+.Header-nav li {
+  padding: 5px;
+}
+
+.Header-nav a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.Header-nav a:hover {
+  color: #007bff;
+}
+
+/************************************
+            HERO
+*************************************/
+.hero-section {
+  height: 500px;
+  background-image: url(../public/images/Backgrounds/4.png);
+  background-position: center;
+  background-size: cover;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  text-align: center;
+  color: #eaeaea;
+}
+
+.hero-text h1 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.hero-text h2 {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+/************************************
+            BUTTON
+*************************************/
+.cta-button {
+  display: inline-block;
+  background-color: #2196f3;
+  color: #d7d7d7;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  margin: 20px;
+  width: 160px;
+}
+
+.cta-button:hover {
+  background-color: #fff;
+  color: #2196f3;
+}
+/************************************
+            SKILLS
+*************************************/
+.skills-section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.skills-logo{
+  height: 100px;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: #dedede;
+  color: #252525;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill h3 {
+  font-size: 16px;
+}
+/************************************
+            PROJECTS
+*************************************/
+.projects-section {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 320px;
+  height: 200px;
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  text-decoration: none;
+}
+.project h4{
+  font-size: 44px;
+  color: #c9c9c9;
+  text-decoration: none;
+}
+
+/************************************
+            SERVICES
+*************************************/
+.services-section {
+  padding: 40px 0 0 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.service {
+  height: 230px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  color: #252525;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.service h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.service p {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.5;
+}
+/************************************
+            PRICING
+*************************************/
+.pricing-section {
+  text-align: left;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.pricing {
+  max-width: 1000px;
+}
+
+.pricing h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.pricing p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+/************************************
+            BIO
+*************************************/
+
+.bio-section {
+  text-align: center;
+}
+
+.bio-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.bio-text {
+  max-width: 1000px;
+  text-align: left;
+}
+
+.bio-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.bio-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+/************************************
+            EDU-EXP
+*************************************/
+
+.edu-exp-section {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.edu-exp-container {
+  width: 1000px;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+
+}
+.edu-exp-container div h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.edu-exp-container div p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+/************************************
+            FOOTER
+*************************************/
+footer {
+  background-color: #252525;
+  color: #fff;
+  font-size: 8px;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+.social-media {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.social-media-logo{
+  height: 24px;
+  margin-right: 10px;
+}
+.social-media li {
+  list-style: none;
+  margin-right: 20px;
+}
+.col-1{
+  padding-left: 10px;
+  width: 40%;
+}
+.col-2{
+  margin: 0 10px;
+}
+.col-3{
+  margin-right: 10px;
+}
+.copyright{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+@media (max-width: 419px){
+  .Header-nav ul{
+    display: none;
+  }
+  
+}
+@media (min-width: 420px){
+  .hero-text h2 {
+    font-size: 20px;
+  }
+  .menue-bars{
+    display: none;
+  }
+  .skills-logo{
+    height: 130px;
+  }
+  .cta-button {
+    font-size: 20px;
+    width: 200px;
+  }
+}
+@media (min-width: 500px){
+  .skills-logo{
+    height: 150px;
+  }
+  .skill {
+    margin: 20px;
+  }
+  .Header-nav a {
+    font-size: 20px;
+  }
+  footer {
+    font-size: 12px;
+  }
+  .service h2 {
+    font-size: 24px;
+  }
+  .service p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 620px){
+  .skills-logo{
+    height: 100px;
+  }
+  .skill {
+    margin: 10px;
+  }
+  .service {
+    width: 500px;
+
+  }
+}
+@media (min-width: 1000px){
+  .Header-nav a {
+    margin: 0 10px;
+  }
+  .hero-text h1 {
+    font-size: 44px;
+  }
+  .hero-text h2 {
+    font-size: 28px;
+  }
+  .service {
+    width: 450px;
+  }
+  .skills-logo{
+    height: 120px;
+  }
+  .skill {
+    margin: 28px;
+  }
+  footer {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .social-media-logo{
+    height: 36px;
+  }
+}
