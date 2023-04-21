@@ -32,7 +32,7 @@ function Services() {
       <div className="pricing-section">
         <div className="pricing-container">
           <div className="pricing">
-            <h3>How I Work</h3>
+            <h2>How I Work</h2>
             <div>
               <p>
               As a freelance developer, I provide customized pricing based on each client's unique website project requirements, either charging an hourly rate or a fixed project fee. I prioritize clear communication with the client, agreeing on project scope and pricing before beginning any work, and providing regular updates on progress for hourly projects or a detailed breakdown of costs for fixed project fee projects. My ultimate goal is to deliver high-quality work that meets the client's needs within their budget.
