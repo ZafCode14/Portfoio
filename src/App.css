@@ -190,12 +190,13 @@ p{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease-in-out;
 }
-
 .skill:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-
+.skill h4{
+  margin: 10px 0 0 0;
+} 
 /************************************
             PROJECTS
 *************************************/
@@ -450,6 +451,9 @@ footer p, h6{
   p{
     font-size: 12px;
   }
+  footer p, h6{
+    font-size: 12px;
+  }
   .menue-bars{
     display: none;
   }
@@ -469,12 +473,14 @@ footer p, h6{
     width: 140px;
   }
 
-  .project {
-    width: 400px;
-    height: 280px;
+  .project-link {
+    width: 300px;
+    height: 200px;
     border-radius: 20px;
   }
-
+  .project{
+    border-radius: 20px;
+  }
   .service {
     height: 160px;
   }
@@ -490,7 +496,7 @@ footer p, h6{
   .skill{
     margin: 10px;
   }
-  .project {
+  .project-link {
     width: 300px;
     height: 220px;
     border-radius: 20px;
