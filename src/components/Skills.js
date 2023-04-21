@@ -7,7 +7,7 @@ function Skills() {
     return (
       <div className="skill" key={skill.id}>
           <img alt="img" src={skill.img} className='skills-logo'/>
-          <h3>{skill.name}</h3>
+          <h4>{skill.name}</h4>
       </div>
     )
   })

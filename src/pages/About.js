@@ -6,7 +6,7 @@ function About() {
       <div className="hero-section">
         <div className="hero-text">
           <h1>About Me</h1>
-          <h2>Get to Know Misha Zafarani</h2>
+          <h4>Get to Know Misha Zafarani</h4>
         </div>
       </div>
       <div className="bio-section">

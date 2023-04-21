@@ -1,8 +1,30 @@
 body{
   margin: 0;
-  background-color: #ababab;
+  background-color: #01000d;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  color: #222222;
+  color: #bfb8c2;
+}
+h1{
+  font-size: 12vw;
+}
+h2{
+  font-size: 10vw;
+  color: #f3f3f3;
+}
+h3{
+  font-size: 8vw;
+}
+h4{
+  font-size: 6vw;
+}
+h5{
+  font-size: 5vw;
+}
+h6{
+  font-size: 4vw;
+}
+p{
+  font-size: 4vw;
 }
 /************************************
             HEADER
@@ -15,6 +37,38 @@ body{
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.Header-logo img {
+  height: 40px;
+  margin: 2px 8px;
+}
+.Header-nav nav {
+  display: flex;
+  justify-content: center;
+}
+.Header-nav ul {
+  display: none;
+  list-style: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+.Header-nav li {
+  padding: 5px;
+}
+
+.Header-nav a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.Header-nav a:hover {
+  color: #007bff;
+}
+/* //////aside////////// */
 .menue-bars{
   height: 40px;
   margin-right: 8px;
@@ -54,37 +108,6 @@ body{
 .aside-nav-container{
   margin-top: 40px;
 }
-.Header-logo img {
-  height: 48px;
-  margin: 0 12px;
-}
-.Header-nav nav {
-  display: flex;
-  justify-content: center;
-}
-.Header-nav ul {
-  display: none;
-  list-style: none;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0;
-}
-.Header-nav li {
-  padding: 5px;
-}
-
-.Header-nav a {
-  font-size: 16px;
-  font-weight: bold;
-  color: #333;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-}
-
-.Header-nav a:hover {
-  color: #007bff;
-}
-
 /************************************
             HERO
 *************************************/
@@ -106,12 +129,10 @@ body{
 }
 
 .hero-text h1 {
-  font-size: 12vw;
   margin-bottom: 16px;
 }
 
 .hero-text h2 {
-  font-size: 6vw;
   margin-bottom: 40px;
 }
 
@@ -144,7 +165,6 @@ body{
 }
 
 .skills-section h2 {
-  font-size: 12vw;
   margin-bottom: 40px;
 }
 
@@ -164,7 +184,7 @@ body{
   align-items: center;
   margin: 2vw;
   padding: 10px;
-  background-color: #f7f7f7;
+  background-color: #ebebeb;
   color: #252525;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -176,9 +196,6 @@ body{
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.skill h3 {
-  font-size: 5vw;
-}
 /************************************
             PROJECTS
 *************************************/
@@ -188,7 +205,6 @@ body{
 }
 
 .projects-section h2 {
-  font-size: 12vw;
   margin-bottom: 40px;
 }
 
@@ -197,7 +213,7 @@ body{
   flex-wrap: wrap;
   justify-content: center;
 }
-.project {
+.project-link {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -209,11 +225,21 @@ body{
   cursor: pointer;
   text-decoration: none;
 }
-.project h4{
-  font-size: 16vw;
-  color: #232323;
-}
 
+.project{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 5vw;
+  color: rgb(20, 20, 20, 0);
+}
+.project:hover{
+  background-color: rgb(255, 255, 255, 0.8);
+  color: rgb(20, 20, 20, 1);
+  transition: .3s;
+}
 /************************************
             SERVICES
 *************************************/
@@ -248,13 +274,11 @@ body{
 }
 
 .service h2 {
-  font-size: 6vw;
   margin-bottom: 20px;
 }
 
 .service p {
   text-align: left;
-  font-size: 3vw;
   line-height: 1.5;
 }
 /************************************
@@ -276,12 +300,10 @@ body{
 }
 
 .pricing h2 {
-  font-size: 6vw;
   margin-bottom: 20px;
 }
 
 .pricing p {
-  font-size: 3vw;
   margin-bottom: 10px;
 }
 /************************************
@@ -305,12 +327,10 @@ body{
 }
 
 .bio-text h2 {
-  font-size: 12vw;
   margin-bottom: 20px;
 }
 
 .bio-text p {
-  font-size: 3vw;
   line-height: 1.5;
   margin-bottom: 20px;
 }
@@ -334,24 +354,24 @@ body{
 
 }
 .edu-exp-container div h2 {
-  font-size: 8vw;
   margin-bottom: 12px;
 }
 
 .edu-exp-container div p {
-  font-size: 3vw;
   margin-bottom: 10px;
 }
 /************************************
             FOOTER
 *************************************/
 footer {
-  background-color: #252525;
+  background-color: #3e3e3e;
   color: #fff;
-  font-size: 2vw;
   line-height: 16px;
   display: flex;
   justify-content: center;
+}
+footer p, h6{
+  font-size: 2vw;
 }
 .row{
   display: flex;
@@ -364,8 +384,8 @@ footer {
   flex-wrap: wrap;
 }
 .social-media-logo{
-  height: 6vw;
-  margin-right: 10px;
+  height: 5.6vw;
+  margin-right: 5px;
 }
 .social-media li {
   list-style: none;
@@ -409,7 +429,27 @@ footer {
 }
 
 @media (min-width: 420px){
-  
+  h1{
+    font-size: 44px;
+  }
+  h2{
+    font-size: 28px;
+  }
+  h3{
+    font-size: 24px;
+  }
+  h4{
+    font-size: 20px;
+  }
+  h5{
+    font-size: 16px;
+  }
+  h6{
+    font-size: 12px;
+  }
+  p{
+    font-size: 12px;
+  }
   .menue-bars{
     display: none;
   }
@@ -419,66 +459,26 @@ footer {
   .hero-section {
     height: 500px;
   }
-  .hero-text h1 {
-    font-size: 44px;
-  }
-  .hero-text h2 {
-    font-size: 24px;
-  }
+
   .cta-button{
     font-size: 20px;
     width: 200px;
   }
-  .skills-section h2{
-    font-size: 38px;
-  }
+
   .skills-logo{
     width: 140px;
   }
-  .skill h3 {
-    font-size: 20px;
-  }
-  .projects-section h2{
-    font-size: 38px;
-  }
+
   .project {
     width: 400px;
     height: 280px;
     border-radius: 20px;
   }
-  .project h4{
-    font-size: 52px;
-  }
+
   .service {
     height: 160px;
   }
-  .service h2 {
-    font-size: 28px;
-  }
-  
-  .service p {
-    font-size: 12px;
-  }
-  .pricing h2 {
-    font-size: 28px;
-  }
-  
-  .pricing p {
-    font-size: 12px;
-  }
-  .bio-text h2 {
-    font-size: 28px;
-  }
-  .bio-text p {
-    font-size: 12px;
-  }
-  .edu-exp-container div h2 {
-    font-size: 28px;
-  }
-  
-  .edu-exp-container div p {
-    font-size: 12px;
-  }
+
 }
 @media (min-width: 760px){
   .Header-nav a {
