@@ -19,5 +19,15 @@ const skillsData = [
         name: 'React',
         img: "images/react.png" 
     },
+    { 
+        id: 5, 
+        name: 'Python',
+        img: "images/python.png" 
+    },
+    { 
+        id: 6, 
+        name: 'Django',
+        img: "images/django.png" 
+    },
   ];
 export default skillsData

@@ -8,8 +8,7 @@ function Home() {
     <div className="Home">
       <div className="hero-section">
         <div className="hero-text">
-          <h1>Hi, I'm Misha Zafarani</h1>
-          <h4>I'm a Frontend Developer</h4>
+          <h1>Frontend Developer</h1>
           <a href="#skills" className="cta-button">View My Skills</a>
           <a href="#projects" className="cta-button">View My Projects</a>
         </div>

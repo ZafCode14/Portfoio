@@ -6,7 +6,7 @@ function Projects() {
     return (
       <a key={project.id} href='#1' style={{backgroundImage:`url(${project.img})`}} className='project-link'>
         <div className='project'>
-          <h1>{project.name}</h1>
+          <h3>{project.name}</h3>
         </div>
       </a>
     )
